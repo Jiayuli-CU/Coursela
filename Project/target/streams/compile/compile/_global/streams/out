@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/yanxw/Documents/Modules/IT5100A Typed Functional Programming in Practice/TeamProject/Project/src/main/scala/DbSetup/package.scala:1:11: object getquill is not a member of package io[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.getquill.{JdbcContext, Literal, MySQLDialect}[0m
+[0m[[0m[31merror[0m] [0m[0m          ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/yanxw/Documents/Modules/IT5100A Typed Functional Programming in Practice/TeamProject/Project/src/main/scala/DbSetup/package.scala:5:23: not found: type JdbcContext[0m
+[0m[[0m[31merror[0m] [0m[0m  type JdbcDatabase = JdbcContext[MySQLDialect, Literal][0m
+[0m[[0m[31merror[0m] [0m[0m                      ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

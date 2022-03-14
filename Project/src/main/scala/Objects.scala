@@ -1,3 +1,5 @@
+package DBObjects
+
 case class Course (
     courseId: String,
     courseName: String,

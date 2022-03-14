@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project.iml" filepath="$PROJECT_DIR$/.idea/modules/Project.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Project-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Project-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TeamProject.iml" filepath="$PROJECT_DIR$/.idea/modules/TeamProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/TeamProject-build.iml" filepath="$PROJECT_DIR$/.idea/modules/TeamProject-build.iml" />
     </modules>
   </component>
 </project>

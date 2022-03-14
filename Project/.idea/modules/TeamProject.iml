@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="tp [file:/Users/yanxw/Documents/Modules/IT5100A%20Typed%20Functional%20Programming%20in%20Practice/TeamProject/Project/]" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_17">
+    <output url="file://$MODULE_DIR$/../../target/scala-2.13/classes" />
+    <output-test url="file://$MODULE_DIR$/../../target/scala-2.13/test-classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../..">
+      <sourceFolder url="file://$MODULE_DIR$/../../src/main/scala" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/../../target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.esotericsoftware:minlog:1.3.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.jasync-sql:jasync-common:1.1.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.jasync-sql:jasync-pool:1.1.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.jasync-sql:jasync-postgresql:1.1.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.nscala-time:nscala-time_2.13:2.30.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.takayahilton:sql-formatter_2.13:1.2.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:fansi_2.13:0.2.14:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:pprint_2.13:0.6.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:sourcecode_2.13:0.2.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.twitter:chill-java:0.10.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.twitter:chill_2.13:0.10.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.scala-logging:scala-logging_2.13:3.9.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe:config:1.4.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.zaxxer:HikariCP:3.4.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:izumi-reflect-thirdparty-boopickle-shaded_2.13:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:izumi-reflect_2.13:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio-logging_2.13:0.5.14:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio-stacktracer_2.13:1.0.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio-streams_2.13:1.0.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio_2.13:1.0.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-core_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-engine_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-jasync-postgres_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-jasync_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-jdbc_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-sql_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.github.microutils:kotlin-logging:1.7.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-buffer:4.1.49.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-codec:4.1.49.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-common:4.1.49.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-handler:4.1.49.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-resolver:4.1.49.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.netty:netty-transport:4.1.49.Final:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.suzaku:boopickle_2.13:1.4.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: joda-time:joda-time:2.10.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.xbean:xbean-asm7-shaded:4.15:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.checkerframework:checker-qual:3.5.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains.kotlin:kotlin-stdlib-common:1.3.61:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.61:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains.kotlin:kotlin-stdlib:1.3.61:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains.kotlinx:kotlinx-coroutines-jdk8:1.3.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.jetbrains:annotations:13.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.joda:joda-convert:2.2.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.objenesis:objenesis:2.5.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.postgresql:postgresql:42.3.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-collection-compat_2.13:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-java8-compat_2.13:0.9.1:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scala-lang.modules:scala-xml_2.13:1.3.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.13.6:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scala-sbt:test-interface:1.0:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalacheck:scalacheck_2.13:1.15.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scalactic:scalactic_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-compatible:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-core_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-diagrams_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-featurespec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-flatspec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-freespec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-funspec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-funsuite_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-matchers-core_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-mustmatchers_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-propspec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-refspec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-shouldmatchers_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest-wordspec_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" scope="TEST" name="sbt: org.scalatest:scalatest_2.13:3.2.10:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:1.7.36:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.slf4j:slf4j-simple:1.7.36:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:cats-core_2.13:2.7.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:cats-kernel_2.13:2.7.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.typelevel:simulacrum-scalafix-annotations_2.13:0.5.4:jar" level="project" />
+  </component>
+</module>
