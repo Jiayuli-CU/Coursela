@@ -12,7 +12,36 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.esotericsoftware:kryo-shaded:4.0.2:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.esotericsoftware:minlog:1.3.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.github.takayahilton:sql-formatter_2.13:1.2.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.google.protobuf:protobuf-java:3.11.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:fansi_2.13:0.2.14:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:pprint_2.13:0.6.6:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.lihaoyi:sourcecode_2.13:0.2.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.twitter:chill-java:0.10.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.twitter:chill_2.13:0.10.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe.scala-logging:scala-logging_2.13:3.9.4:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.typesafe:config:1.4.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: com.zaxxer:HikariCP:3.4.5:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:izumi-reflect-thirdparty-boopickle-shaded_2.13:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:izumi-reflect_2.13:1.1.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio-logging_2.13:0.5.14:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio-stacktracer_2.13:1.0.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio-streams_2.13:1.0.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: dev.zio:zio_2.13:1.0.12:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-core_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-engine_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-jdbc_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.getquill:quill-sql_2.13:3.16.3:jar" level="project" />
+    <orderEntry type="library" name="sbt: io.suzaku:boopickle_2.13:1.4.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: mysql:mysql-connector-java:8.0.28:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.apache.xbean:xbean-asm7-shaded:4.15:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.objenesis:objenesis:2.5.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang.modules:scala-collection-compat_2.13:2.6.0:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-library:2.13.7:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.scala-lang:scala-reflect:2.13.5:jar" level="project" />
     <orderEntry type="library" name="sbt: org.scala-lang:scala3-library_3:3.1.1:jar" level="project" />
+    <orderEntry type="library" name="sbt: org.slf4j:slf4j-api:1.7.30:jar" level="project" />
   </component>
 </module>
