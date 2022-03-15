@@ -1,9 +1,8 @@
 package queries
 
+import objects._
 import dbSetup._
 import io.getquill.Ord
-import io.getquill.mirrorContextWithQueryProbing._
-import objects._
 
 object Queries extends App {
     //    select (select course_name
@@ -16,17 +15,17 @@ object Queries extends App {
     //    order by review_num desc
     //    limit 1
     val ctx = getDbContext(dbName = "postgres", port = 5432)
-
+    import ctx._
     def rankCoursesByReviewerNumber(limit: Int): Result[RunQueryResult[(String, Long)]] = {
         val topCourses = run {
             quote {
                 query[Review]
-                    .groupBy(_.courseId)
-                    .map {
-                        case (course, review) => (course, review.size)
-                    }
-                    .sortBy(_._2)(Ord.desc)
-                    .take(lift(limit))
+                  .groupBy(_.courseId)
+                  .map {
+                      case (course, review) => (course, review.size)
+                  }
+                  .sortBy(_._2)(Ord.desc)
+                  .take(lift(limit))
             }
         }
         topCourses
@@ -42,42 +41,42 @@ object Queries extends App {
         val topInstitutions = run {
             quote {
                 query[Review]
-                    .join(query[Course])
-                    .on(
-                        (r, c) => r.courseId == c.courseId
-                    )
-                    .groupBy(_._2.institution)
-                    .map {
-                        case (institution, tuple) => (institution, tuple.size)
-                    }
-                    .sortBy(_._2)(Ord.desc)
-                    .take(lift(limit))
+                  .join(query[Course])
+                  .on(
+                      (r, c) => r.courseId == c.courseId
+                  )
+                  .groupBy(_._2.institution)
+                  .map {
+                      case (institution, tuple) => (institution, tuple.size)
+                  }
+                  .sortBy(_._2)(Ord.desc)
+                  .take(lift(limit))
             }
         }
         topInstitutions
     }
 
-    //    select (select course_name
-    //        from "Course"
-    //    where course_id = "Review".course_id)
-    //    as course_name,
-    //    avg(rating) as avg_rating
-    //    from "Review"
-    //    group by course_id
-    //    order by avg_rating desc
-    //    limit 1
-    def rankCoursesByRating(limit: Int): Result[RunQueryResult[(String, Option[BigDecimal])]] = {
+  //    select (select course_name
+  //        from "Course"
+  //    where course_id = "Review".course_id)
+  //    as course_name,
+  //    avg(rating) as avg_rating
+  //    from "Review"
+  //    group by course_id
+  //    order by avg_rating desc
+  //    limit 1
+  def rankCoursesByRating(limit: Int): Result[RunQueryResult[(String, Option[BigDecimal])]] = {
         val topRatedCourses = run {
             quote {
                 query[Review]
-                    .groupBy(_.courseId)
-                    .map {
-                        case (course, tuple) => (course,
-                            tuple.map(_.rating).avg
-                        )
-                    }
-                    .sortBy(_._2)(Ord.desc)
-                    .take(lift(limit))
+                  .groupBy(_.courseId)
+                  .map {
+                      case (course, tuple) => (course,
+                        tuple.map(_.rating).avg
+                      )
+                  }
+                  .sortBy(_._2)(Ord.desc)
+                  .take(lift(limit))
             }
         }
         topRatedCourses
@@ -93,18 +92,18 @@ object Queries extends App {
         val topRatedInstitutions = run {
             quote {
                 query[Review]
-                    .join(query[Course])
-                    .on(
-                        (r, c) => r.courseId == c.courseId
-                    )
-                    .groupBy(_._2.institution)
-                    .map {
-                        case (institution, tuple) => (institution,
-                            tuple.map(_._1.rating).avg
-                        )
-                    }
-                    .sortBy(_._2)(Ord.desc)
-                    .take(lift(limit))
+                  .join(query[Course])
+                  .on(
+                      (r, c) => r.courseId == c.courseId
+                  )
+                  .groupBy(_._2.institution)
+                  .map {
+                      case (institution, tuple) => (institution,
+                          tuple.map(_._1.rating).avg
+                      )
+                  }
+                  .sortBy(_._2)(Ord.desc)
+                  .take(lift(limit))
             }
         }
         topRatedInstitutions
@@ -119,12 +118,12 @@ object Queries extends App {
         val topReleasedInstitutions = run {
             quote {
                 query[Course]
-                    .groupBy(_.institution)
-                    .map {
-                        case (institution, courses) => (institution, courses.size)
-                    }
-                    .sortBy(_._2)(Ord.desc)
-                    .take(lift(limit))
+                  .groupBy(_.institution)
+                  .map {
+                      case (institution, courses) => (institution, courses.size)
+                  }
+                  .sortBy(_._2)(Ord.desc)
+                  .take(lift(limit))
             }
         }
         topReleasedInstitutions
@@ -139,19 +138,16 @@ object Queries extends App {
         val topReviewers = run {
             quote {
                 query[Review]
-                    .groupBy(_.reviewId)
-                    .map {
-                        case (id, reviews) => (id, reviews.size)
-                    }
-                    .join(query[Reviewer])
-                    .on(
-                        (tuple, reviewer) => (tuple._2 == reviewer.reviewerId)
-                    )
-                    .map {
-                        case ((_, cnt), name) => (name.reviewerName, cnt)
-                    }
-                    .sortBy(_._2)(Ord.desc)
-                    .take(lift(limit))
+                  .join(query[Reviewer])
+                  .on (
+                      (review, reviewer) => review.reviewId == reviewer.reviewerId
+                  )
+                  .groupBy(_._2.reviewerName)
+                  .map {
+                      case (name, tuple) => (name, tuple.size)
+                  }
+                  .sortBy(_._2)(Ord.desc)
+                  .take(lift(limit))
             }
         }
         topReviewers

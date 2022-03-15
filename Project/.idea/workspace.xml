@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a65bdfc4-502a-4837-a4f1-a97e1b19d8db" name="Changes" comment="reset build.sbt">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/TeamProject-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TeamProject-build.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/recourses/database setup/create.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recourses/database setup/create.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/recourses/database setup/insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recourses/database setup/insert.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,10 +88,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Queries" />
-      <item itemvalue="Application.Main" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -119,8 +108,7 @@
       <updated>1647254958787</updated>
       <workItem from="1647254959852" duration="8761000" />
       <workItem from="1647326925528" duration="210000" />
-      <workItem from="1647327141031" duration="4761000" />
-      <workItem from="1647334794929" duration="1122000" />
+      <workItem from="1647327141031" duration="7339000" />
     </task>
     <servers />
   </component>
