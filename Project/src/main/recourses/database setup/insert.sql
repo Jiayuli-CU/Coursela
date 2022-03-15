@@ -10,11 +10,13 @@ values ('machine-learning',
 insert into "reviewer"(reviewer_name)
 values ('Li Jiayu');
 
-insert into "review"(review_date,
+insert into "review"(review_content,
+                     review_date,
                      rating,
                      reviewer_id,
                      course_id)
-values ('2022-02-02',
+values ('reviews',
+        2022-02-02',
         5,
         1,
         'machine-learning');
