@@ -3,6 +3,7 @@ import service.showResult
 
 import scala.io.StdIn
 
+
 object Main {
     def userInterfaceSetup(): Unit = {
         println(
@@ -37,11 +38,11 @@ object Main {
             val result = inputParameters()
             result._1 match {
                 case 1 => showResult(Queries.rankCoursesByReviewerNumber(limit = result._2))
-                case 2 => Queries.rankInstitutionsByReviewerNumber(limit = result._2)
-                case 3 => Queries.rankCoursesByRating(limit = result._2)
-                case 4 => Queries.rankInstitutionsByRating(limit = result._2)
-                case 5 => Queries.rankReviewersByReviewNumber(limit = result._2)
-                case 6 => Queries.rankInstitutionsByCoursesReleased(limit = result._2)
+                case 2 => showResult(Queries.rankInstitutionsByReviewerNumber(limit = result._2))
+                case 3 => showResult(Queries.rankCoursesByRating(limit = result._2))
+                case 4 => showResult(Queries.rankInstitutionsByRating(limit = result._2))
+                case 5 => showResult(Queries.rankReviewersByReviewNumber(limit = result._2))
+                case 6 => showResult(Queries.rankInstitutionsByCoursesReleased(limit = result._2))
                 case 7 => println("Goodbye!"); System.exit(0)
                 case _ => println("Illegal input.")
             }

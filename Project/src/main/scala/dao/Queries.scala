@@ -21,9 +21,13 @@ object Queries extends App {
         val topCourses = run {
             quote {
                 query[Review]
-                  .groupBy(_.course_id)
+                  .join(query[Course])
+                  .on (
+                    (r, c) => r.course_id == c.course_id
+                  )
+                  .groupBy(_._2.course_name)
                   .map {
-                      case (course, review) => (course, review.size)
+                      case (cname, reviews) => (cname, reviews.size)
                   }
                   .sortBy(_._2)(Ord.desc)
                   .take(lift(limit))
@@ -74,11 +78,15 @@ object Queries extends App {
       val topRatedCourses = run {
             quote {
                 query[Review]
-                  .groupBy(_.course_id)
+                  .join(query[Course])
+                  .on (
+                    (r, c) => r.course_id == c.course_id
+                  )
+                  .groupBy(_._2.course_name)
                   .map {
-                      case (course, tuple) => (course,
-                        tuple.map(_.rating).avg
-                      )
+                    case (cname, tuples) => (cname,
+                      tuples.map(_._1.rating).avg
+                    )
                   }
                   .sortBy(_._2)(Ord.desc)
                   .take(lift(limit))
