@@ -25,8 +25,11 @@ object Main {
     def inputParameters(): (Int, Int) = {
         print("Please input the index of your selected function: ")
         val selection: Int = StdIn.readInt()
-        print("Please input your desired number N: ")
-        val limit: Int = StdIn.readInt()
+        var limit: Int = -1
+        if (selection != 7) {
+            print("Please input your desired number N: ")
+            limit = StdIn.readInt()
+        }
         print("______________________________________________________________\n")
         (selection, limit)
     }
