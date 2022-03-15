@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a65bdfc4-502a-4837-a4f1-a97e1b19d8db" name="Changes" comment="add git ignore" />
+    <list default="true" id="a65bdfc4-502a-4837-a4f1-a97e1b19d8db" name="Changes" comment="reset build.sbt">
+      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,10 +88,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Queries" />
-      <item itemvalue="Application.Main" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -108,17 +108,8 @@
       <updated>1647254958787</updated>
       <workItem from="1647254959852" duration="8761000" />
       <workItem from="1647326925528" duration="210000" />
-      <workItem from="1647327141031" duration="4761000" />
-      <workItem from="1647334794929" duration="1466000" />
+      <workItem from="1647327141031" duration="7339000" />
     </task>
-    <task id="LOCAL-00001" summary="add git ignore">
-      <created>1647335934543</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1647335934543</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,7 +128,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reset build.sbt" />
-    <MESSAGE value="add git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add git ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="reset build.sbt" />
   </component>
 </project>
