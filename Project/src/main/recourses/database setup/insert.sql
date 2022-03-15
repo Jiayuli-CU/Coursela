@@ -1,4 +1,11 @@
-
+insert into "Course"(course_id,
+                     course_name,
+                     institution,
+                     course_url)
+values ('machine-learning',
+        'Machine Learning',
+        'Stanford University',
+        'https://www.coursera.org/learn/machine-learning');
 
 insert into "Reviewer"(reviewer_name)
 values ('Li Jiayu');

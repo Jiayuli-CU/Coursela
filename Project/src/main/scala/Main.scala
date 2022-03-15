@@ -32,6 +32,7 @@ object Main {
 
     def main(args: Array[String]): Unit = {
         userInterfaceSetup()
+
         while (true) {
             val result = inputParameters()
             result._1 match {
@@ -41,7 +42,7 @@ object Main {
                 case 4 => Queries.rankInstitutionsByRating(limit = result._2)
                 case 5 => Queries.rankReviewersByReviewNumber(limit = result._2)
                 case 6 => Queries.rankInstitutionsByCoursesReleased(limit = result._2)
-                case 7 => System.exit(0)
+                case 7 => println("Goodbye!"); System.exit(0)
                 case _ => println("Illegal input.")
             }
         }
