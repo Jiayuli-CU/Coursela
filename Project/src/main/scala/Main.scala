@@ -1,7 +1,7 @@
-import queries.Queries
+import dao.Queries
+import service.showResult
 
 import scala.io.StdIn
-
 
 object Main {
     def userInterfaceSetup(): Unit = {
@@ -36,7 +36,7 @@ object Main {
         while (true) {
             val result = inputParameters()
             result._1 match {
-                case 1 => Queries.rankCoursesByReviewerNumber(limit = result._2)
+                case 1 => showResult(Queries.rankCoursesByReviewerNumber(limit = result._2))
                 case 2 => Queries.rankInstitutionsByReviewerNumber(limit = result._2)
                 case 3 => Queries.rankCoursesByRating(limit = result._2)
                 case 4 => Queries.rankInstitutionsByRating(limit = result._2)

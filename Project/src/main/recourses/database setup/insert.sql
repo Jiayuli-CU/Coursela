@@ -1,4 +1,4 @@
-insert into "Course"(course_id,
+insert into "course"(course_id,
                      course_name,
                      institution,
                      course_url)
@@ -7,10 +7,10 @@ values ('machine-learning',
         'Stanford University',
         'https://www.coursera.org/learn/machine-learning');
 
-insert into "Reviewer"(reviewer_name)
+insert into "reviewer"(reviewer_name)
 values ('Li Jiayu');
 
-insert into "Review"(review_date,
+insert into "review"(review_date,
                      rating,
                      reviewer_id,
                      course_id)

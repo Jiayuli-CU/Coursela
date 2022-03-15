@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a65bdfc4-502a-4837-a4f1-a97e1b19d8db" name="Changes" comment="reset build.sbt">
-      <change afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/service/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/recourses/database setup/create.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recourses/database setup/create.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/recourses/database setup/insert.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/recourses/database setup/insert.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/objects/Course.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/Course.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/objects/Review.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/Review.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/objects/Reviewer.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/Reviewer.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/queries/Queries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/dao/Queries.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +47,26 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Package Object" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -76,11 +102,11 @@
       </method>
     </configuration>
     <configuration name="Queries" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="queries.Queries" />
+      <option name="MAIN_CLASS_NAME" value="dao.Queries" />
       <module name="TeamProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="queries.*" />
+          <option name="PATTERN" value="dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,6 +114,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Queries" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -129,5 +159,31 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reset build.sbt" />
     <option name="LAST_COMMIT_MESSAGE" value="reset build.sbt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/dbSetup/package.scala</url>
+          <line>8</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/dbSetup/package.scala</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/dbSetup/package.scala</url>
+          <line>10</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/dao/Queries.scala</url>
+          <line>31</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

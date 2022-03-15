@@ -1,8 +1,9 @@
-package queries
+package dao
 
-import objects._
 import dbSetup._
 import io.getquill.Ord
+import model._
+
 
 object Queries extends App {
     //    select (select course_name
@@ -14,13 +15,13 @@ object Queries extends App {
     //    group by course_id
     //    order by review_num desc
     //    limit 1
-    val ctx = getDbContext(dbName = "postgres", port = 5432)
-    import ctx._
-    def rankCoursesByReviewerNumber(limit: Int): Result[RunQueryResult[(String, Long)]] = {
+    def rankCoursesByReviewerNumber(limit: Int): List[(String, Long)] = {
+        val ctx = getDbContext(dbName = "postgres", port = 5432)
+        import ctx._
         val topCourses = run {
             quote {
                 query[Review]
-                  .groupBy(_.courseId)
+                  .groupBy(_.course_id)
                   .map {
                       case (course, review) => (course, review.size)
                   }
@@ -37,13 +38,15 @@ object Queries extends App {
     //    group by institution
     //    order by review_num desc
     //    limit 1
-    def rankInstitutionsByReviewerNumber(limit: Int): Result[RunQueryResult[(String, Long)]] = {
+    def rankInstitutionsByReviewerNumber(limit: Int): List[(String, Long)] = {
+        val ctx = getDbContext(dbName = "postgres", port = 5432)
+        import ctx._
         val topInstitutions = run {
             quote {
                 query[Review]
                   .join(query[Course])
                   .on(
-                      (r, c) => r.courseId == c.courseId
+                      (r, c) => r.course_id == c.course_id
                   )
                   .groupBy(_._2.institution)
                   .map {
@@ -65,11 +68,13 @@ object Queries extends App {
   //    group by course_id
   //    order by avg_rating desc
   //    limit 1
-  def rankCoursesByRating(limit: Int): Result[RunQueryResult[(String, Option[BigDecimal])]] = {
-        val topRatedCourses = run {
+  def rankCoursesByRating(limit: Int): List[(String, Option[BigDecimal])] = {
+      val ctx = getDbContext(dbName = "postgres", port = 5432)
+      import ctx._
+      val topRatedCourses = run {
             quote {
                 query[Review]
-                  .groupBy(_.courseId)
+                  .groupBy(_.course_id)
                   .map {
                       case (course, tuple) => (course,
                         tuple.map(_.rating).avg
@@ -88,13 +93,15 @@ object Queries extends App {
     //    group by institution
     //    order by avg_rating desc
     //    limit 1
-    def rankInstitutionsByRating(limit: Int): Result[RunQueryResult[(String, Option[BigDecimal])]] = {
+    def rankInstitutionsByRating(limit: Int): List[(String, Option[BigDecimal])] = {
+        val ctx = getDbContext(dbName = "postgres", port = 5432)
+        import ctx._
         val topRatedInstitutions = run {
             quote {
                 query[Review]
                   .join(query[Course])
                   .on(
-                      (r, c) => r.courseId == c.courseId
+                      (r, c) => r.course_id == c.course_id
                   )
                   .groupBy(_._2.institution)
                   .map {
@@ -114,7 +121,9 @@ object Queries extends App {
     //    group by institution
     //    order by course_released desc
     //    limit 1
-    def rankInstitutionsByCoursesReleased(limit: Int): Result[RunQueryResult[(String, Long)]] = {
+    def rankInstitutionsByCoursesReleased(limit: Int): List[(String, Long)] = {
+        val ctx = getDbContext(dbName = "postgres", port = 5432)
+        import ctx._
         val topReleasedInstitutions = run {
             quote {
                 query[Course]
@@ -134,15 +143,17 @@ object Queries extends App {
     //    group by reviewer_name
     //    order by review_num desc
     //    limit 1
-    def rankReviewersByReviewNumber(limit: Int): Result[RunQueryResult[(String, Long)]] = {
+    def rankReviewersByReviewNumber(limit: Int): List[(String, Long)] = {
+        val ctx = getDbContext(dbName = "postgres", port = 5432)
+        import ctx._
         val topReviewers = run {
             quote {
                 query[Review]
                   .join(query[Reviewer])
                   .on (
-                      (review, reviewer) => review.reviewId == reviewer.reviewerId
+                      (review, reviewer) => review.review_id == reviewer.reviewer_id
                   )
-                  .groupBy(_._2.reviewerName)
+                  .groupBy(_._2.reviewer_name)
                   .map {
                       case (name, tuple) => (name, tuple.size)
                   }

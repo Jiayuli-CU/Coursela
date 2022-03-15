@@ -1,36 +1,36 @@
-select 'CREATE DATABASE coursela'
-where not exists (select from pg_database WHERE datname = 'coursela')\gexec
+-- select 'CREATE DATABASE coursela'
+-- where not exists (select from pg_database WHERE datname = 'coursela')\gexec
 
 create schema if not exists public;
-drop table if exists "Review";
+drop table if exists "review";
 
-drop table if exists "Course";
-create table "Course"
+drop table if exists "course";
+create table "course"
 (
     course_id   varchar(64)
         constraint course_pk
-        primary key,
+            primary key,
     course_name varchar(128) unique not null,
     institution varchar(64)         not null,
     course_url  varchar             not null
 );
 
-drop table if exists "Reviewer";
-create table "Reviewer"
+drop table if exists "reviewer";
+create table "reviewer"
 (
     reviewer_id   serial
         constraint reviewer_pk
-        primary key,
+            primary key,
     reviewer_name varchar(32) not null
 );
 
-create table "Review"
+create table "review"
 (
     review_id   serial
         constraint review_pk
-        primary key,
+            primary key,
     review_date date        not null,
     rating      int2        not null,
-    reviewer_id int         not null references "Reviewer" (reviewer_id),
-    course_id   varchar(64) not null references "Course" (course_id)
+    reviewer_id int         not null references "reviewer" (reviewer_id),
+    course_id   varchar(64) not null references "course" (course_id)
 );
