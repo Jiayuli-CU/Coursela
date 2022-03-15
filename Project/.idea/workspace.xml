@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a65bdfc4-502a-4837-a4f1-a97e1b19d8db" name="Changes" comment="reset build.sbt">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b9e7ae4f-9059-4533-9d7d-205445f3a785/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/TeamProject-build.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/TeamProject-build.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/service/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/service/package.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/model/Review.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/model/Review.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,5 +153,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="reset build.sbt" />
     <option name="LAST_COMMIT_MESSAGE" value="reset build.sbt" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/main/scala/service/package.scala</url>
+          <line>9</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

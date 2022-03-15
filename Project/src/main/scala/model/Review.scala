@@ -5,5 +5,6 @@ case class Review(
                      review_date: String,
                      rating: Int,
                      reviewer_id: Int,
-                     course_id: String
+                     course_id: String,
+                     review_data: String
                  )
