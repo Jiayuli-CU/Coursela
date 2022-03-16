@@ -24,11 +24,28 @@ object Main {
 
     def inputParameters(): (Int, Int) = {
         print("Please input the index of your selected function: ")
-        val selection: Int = StdIn.readInt()
-        var limit: Int = -1
-        if (selection != 7) {
+        var selection: Int = 0
+        try {
+            selection = StdIn.readInt()
+        } catch {
+            case _: NumberFormatException =>
+                println("Invalid number format. System exit now.")
+                System.exit(0)
+        }
+        var limit: Int = 0
+        if (selection > 0 && selection < 7) {
             print("Please input your desired number N: ")
-            limit = StdIn.readInt()
+            try {
+                limit = StdIn.readInt()
+                while (limit <= 0) {
+                    print("Illegal N. Please re-input your desired number N: ")
+                    limit = StdIn.readInt()
+                }
+            } catch {
+                case _: NumberFormatException =>
+                    println("Invalid number format. System exit now.")
+                    System.exit(0)
+            }
         }
         print("______________________________________________________________\n")
         (selection, limit)
