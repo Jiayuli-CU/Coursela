@@ -8,7 +8,6 @@ drop table if exists "course";
 create table "course"
 (
     course_id   varchar(64)
-        constraint course_pk
             primary key,
     course_name varchar(128) not null,
     institution varchar(64)         not null,

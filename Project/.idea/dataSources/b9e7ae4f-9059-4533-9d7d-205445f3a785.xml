@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.32">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>1842</IntrospectionStateNumber>
+      <IntrospectionStateNumber>10416</IntrospectionStateNumber>
       <ServerVersion>14.2</ServerVersion>
       <StartupTime>1647323404</StartupTime>
       <TimeZones>true ACDT
@@ -801,10 +801,10 @@ false Zulu
 13654||10|C|G
 13654||-9223372036854775808|U|G
 13654||10|U|G</Grants>
-      <IntrospectionStateNumber>1843</IntrospectionStateNumber>
+      <IntrospectionStateNumber>10417</IntrospectionStateNumber>
       <ObjectId>14020</ObjectId>
-      <Relations>sequence|table|16506|16507|1
-sequence|table|16513|16514|1
+      <Relations>sequence|table|16619|16620|1
+sequence|table|16626|16627|1
 </Relations>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4233,38 +4233,38 @@ sequence|table|16513|16514|1
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1843</IntrospectionStateNumber>
+      <IntrospectionStateNumber>10417</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
     <sequence id="263" parent="262" name="review_review_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>16513</ObjectId>
-      <StateNumber>1840</StateNumber>
+      <ObjectId>16626</ObjectId>
+      <StateNumber>10414</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="264" parent="262" name="reviewer_reviewer_id_seq">
       <DataType>integer|0s</DataType>
-      <ObjectId>16506</ObjectId>
-      <StateNumber>1839</StateNumber>
+      <ObjectId>16619</ObjectId>
+      <StateNumber>10413</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <table id="265" parent="262" name="course">
-      <ObjectId>16499</ObjectId>
-      <StateNumber>1840</StateNumber>
+      <ObjectId>16612</ObjectId>
+      <StateNumber>10414</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="266" parent="262" name="review">
-      <ObjectId>16514</ObjectId>
-      <StateNumber>1840</StateNumber>
+      <ObjectId>16627</ObjectId>
+      <StateNumber>10414</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
     <table id="267" parent="262" name="reviewer">
-      <ObjectId>16507</ObjectId>
-      <StateNumber>1840</StateNumber>
+      <ObjectId>16620</ObjectId>
+      <StateNumber>10414</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4272,112 +4272,113 @@ sequence|table|16513|16514|1
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1838</StateNumber>
+      <StateNumber>10411</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="269" parent="265" name="course_name">
       <DataType>varchar(128)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1838</StateNumber>
+      <StateNumber>10411</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="270" parent="265" name="institution">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>1838</StateNumber>
+      <StateNumber>10411</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <column id="271" parent="265" name="course_url">
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>1838</StateNumber>
+      <StateNumber>10411</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="272" parent="265" name="course_pk">
+    <index id="272" parent="265" name="course_pkey">
       <ClassIds>3126</ClassIds>
       <ColNames>course_id</ColNames>
       <CollationIds>100</CollationIds>
       <CollationNames>default</CollationNames>
-      <ObjectId>16504</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16617</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1838</StateNumber>
+      <StateNumber>10411</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="273" parent="265" name="course_pk">
+    <key id="273" parent="265" name="course_pkey">
       <ColNames>course_id</ColNames>
-      <ObjectId>16505</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16618</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1838</StateNumber>
-      <UnderlyingIndexId>16504</UnderlyingIndexId>
+      <StateNumber>10411</StateNumber>
+      <UnderlyingIndexId>16617</UnderlyingIndexId>
     </key>
     <column id="274" parent="266" name="review_id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;review_review_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="275" parent="266" name="review_content">
       <DataType>text|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <TypeId>25</TypeId>
     </column>
     <column id="276" parent="266" name="review_date">
       <DataType>date|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <TypeId>1082</TypeId>
     </column>
     <column id="277" parent="266" name="rating">
       <DataType>smallint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <TypeId>21</TypeId>
     </column>
     <column id="278" parent="266" name="reviewer_id">
       <DataType>integer|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="279" parent="266" name="course_id">
       <DataType>varchar(64)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <foreign-key id="280" parent="266" name="review_reviewer_id_fkey">
       <ColNames>reviewer_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16522</ObjectId>
+      <ObjectId>16635</ObjectId>
       <RefColNames>reviewer_id</RefColNames>
       <RefColPositions>1</RefColPositions>
       <RefKeyName>reviewer_pk</RefKeyName>
-      <StateNumber>1840</StateNumber>
-      <RefTableId>16507</RefTableId>
+      <StateNumber>10414</StateNumber>
+      <RefTableId>16620</RefTableId>
       <RefTableName>reviewer</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
     <foreign-key id="281" parent="266" name="review_course_id_fkey">
       <ColNames>course_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>16527</ObjectId>
+      <ObjectId>16640</ObjectId>
       <RefColNames>course_id</RefColNames>
       <RefColPositions>1</RefColPositions>
-      <RefKeyName>course_pk</RefKeyName>
-      <StateNumber>1840</StateNumber>
-      <RefTableId>16499</RefTableId>
+      <StateNumber>10414</StateNumber>
+      <RefTableId>16612</RefTableId>
       <RefTableName>course</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
@@ -4385,50 +4386,50 @@ sequence|table|16513|16514|1
       <ClassIds>1978</ClassIds>
       <ColNames>review_id</ColNames>
       <CollationIds>0</CollationIds>
-      <ObjectId>16520</ObjectId>
+      <ObjectId>16633</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1840</StateNumber>
+      <StateNumber>10414</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="283" parent="266" name="review_pk">
       <ColNames>review_id</ColNames>
-      <ObjectId>16521</ObjectId>
+      <ObjectId>16634</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1840</StateNumber>
-      <UnderlyingIndexId>16520</UnderlyingIndexId>
+      <StateNumber>10414</StateNumber>
+      <UnderlyingIndexId>16633</UnderlyingIndexId>
     </key>
     <column id="284" parent="267" name="reviewer_id">
       <DataType>integer|0s</DataType>
       <DefaultExpression>nextval(&apos;reviewer_reviewer_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>1839</StateNumber>
+      <StateNumber>10413</StateNumber>
       <TypeId>23</TypeId>
     </column>
     <column id="285" parent="267" name="reviewer_name">
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>1839</StateNumber>
+      <StateNumber>10413</StateNumber>
       <TypeId>1043</TypeId>
     </column>
     <index id="286" parent="267" name="reviewer_pk">
       <ClassIds>1978</ClassIds>
       <ColNames>reviewer_id</ColNames>
       <CollationIds>0</CollationIds>
-      <ObjectId>16511</ObjectId>
+      <ObjectId>16624</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1839</StateNumber>
+      <StateNumber>10413</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
     <key id="287" parent="267" name="reviewer_pk">
       <ColNames>reviewer_id</ColNames>
-      <ObjectId>16512</ObjectId>
+      <ObjectId>16625</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1839</StateNumber>
-      <UnderlyingIndexId>16511</UnderlyingIndexId>
+      <StateNumber>10413</StateNumber>
+      <UnderlyingIndexId>16624</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>

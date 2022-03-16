@@ -159,7 +159,7 @@ object Queries extends App {
                 query[Review]
                   .join(query[Reviewer])
                   .on (
-                      (review, reviewer) => review.review_id == reviewer.reviewer_id
+                      (review, reviewer) => review.reviewer_id == reviewer.reviewer_id
                   )
                   .groupBy(_._2.reviewer_name)
                   .map {
