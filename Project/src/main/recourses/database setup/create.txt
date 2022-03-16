@@ -24,6 +24,7 @@ create table "reviewer"
     reviewer_name varchar(32) not null
 );
 
+drop table if exists "review";
 create table "review"
 (
     review_id   serial

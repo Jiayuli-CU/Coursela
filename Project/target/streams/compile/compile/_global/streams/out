@@ -1,7 +1,18 @@
-[0m[[0m[31merror[0m] [0m[0m/Users/yanxw/Documents/Modules/IT5100A Typed Functional Programming in Practice/TeamProject/Project/src/main/scala/DbSetup/package.scala:1:11: object getquill is not a member of package io[0m
-[0m[[0m[31merror[0m] [0m[0mimport io.getquill.{JdbcContext, Literal, MySQLDialect}[0m
-[0m[[0m[31merror[0m] [0m[0m          ^[0m
-[0m[[0m[31merror[0m] [0m[0m/Users/yanxw/Documents/Modules/IT5100A Typed Functional Programming in Practice/TeamProject/Project/src/main/scala/DbSetup/package.scala:5:23: not found: type JdbcContext[0m
-[0m[[0m[31merror[0m] [0m[0m  type JdbcDatabase = JdbcContext[MySQLDialect, Literal][0m
-[0m[[0m[31merror[0m] [0m[0m                      ^[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[info] /Users/zhangyang/Downloads/java_codes/Coursela/Project/src/main/scala/dao/Queries.scala:21:30: SELECT rc._1, rc._2 FROM (SELECT c.course_name AS _1, COUNT(*) AS _2 FROM review r INNER JOIN course c ON r.course_id = c.course_id GROUP BY c.course_name) AS rc ORDER BY rc._2 DESC LIMIT ?
+[info]         val topCourses = run {
+[info]                              ^
+[info] /Users/zhangyang/Downloads/java_codes/Coursela/Project/src/main/scala/dao/Queries.scala:48:35: SELECT rc._1, rc._2 FROM (SELECT c.institution AS _1, COUNT(*) AS _2 FROM review r INNER JOIN course c ON r.course_id = c.course_id GROUP BY c.institution) AS rc ORDER BY rc._2 DESC LIMIT ?
+[info]         val topInstitutions = run {
+[info]                                   ^
+[info] /Users/zhangyang/Downloads/java_codes/Coursela/Project/src/main/scala/dao/Queries.scala:78:33: SELECT rc._1, rc._2 FROM (SELECT c.course_name AS _1, AVG(r.rating) AS _2 FROM review r INNER JOIN course c ON r.course_id = c.course_id GROUP BY c.course_name) AS rc ORDER BY rc._2 DESC LIMIT ?
+[info]       val topRatedCourses = run {
+[info]                                 ^
+[info] /Users/zhangyang/Downloads/java_codes/Coursela/Project/src/main/scala/dao/Queries.scala:107:40: SELECT rc._1, rc._2 FROM (SELECT c.institution AS _1, AVG(r.rating) AS _2 FROM review r INNER JOIN course c ON r.course_id = c.course_id GROUP BY c.institution) AS rc ORDER BY rc._2 DESC LIMIT ?
+[info]         val topRatedInstitutions = run {
+[info]                                        ^
+[info] /Users/zhangyang/Downloads/java_codes/Coursela/Project/src/main/scala/dao/Queries.scala:135:43: SELECT x11._1, x11._2 FROM (SELECT x11.institution AS _1, COUNT(x11.*) AS _2 FROM course x11 GROUP BY x11.institution) AS x11 ORDER BY x11._2 DESC LIMIT ?
+[info]         val topReleasedInstitutions = run {
+[info]                                           ^
+[info] /Users/zhangyang/Downloads/java_codes/Coursela/Project/src/main/scala/dao/Queries.scala:157:32: SELECT reviewreviewer._1, reviewreviewer._2 FROM (SELECT reviewer.reviewer_name AS _1, COUNT(*) AS _2 FROM review review INNER JOIN reviewer reviewer ON review.review_id = reviewer.reviewer_id GROUP BY reviewer.reviewer_name) AS reviewreviewer ORDER BY reviewreviewer._2 DESC LIMIT ?
+[info]         val topReviewers = run {
+[info]                                ^
