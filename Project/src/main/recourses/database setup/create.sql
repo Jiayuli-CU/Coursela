@@ -1,6 +1,3 @@
--- select 'CREATE DATABASE coursela'
--- where not exists (select from pg_database WHERE datname = 'coursela')\gexec
-
 create schema if not exists public;
 drop table if exists "review";
 
